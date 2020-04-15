@@ -1,0 +1,41 @@
+index:
+    path: /
+    controller: App\Controller\ApiController::index
+
+register:
+  path: /register
+  controller: App\Controller\AuthController::register
+  methods: POST
+
+api:
+  path: /api
+  controller: App\Controller\AuthController::api
+
+login_check:
+  path:     /login
+  controller: App\Controller\AuthController::getTokenUser
+
+orders:
+  path:     /orders
+  controller: App\Controller\OrderController::getOrders
+  methods:  GET
+
+new_order:
+  path:     /orders
+  controller: App\Controller\OrderController::newOrder
+  methods:  POST
+
+show_order:
+  path:     /orders/{orderCode}
+  controller: App\Controller\OrderController::getOrderDetail
+  methods:  GET
+
+update_order:
+  path:     /orders/{orderCode}
+  controller: App\Controller\OrderController::updateOrder
+  methods:  PUT
+
+delete_order:
+  path:     /orders/{orderCode}
+  controller: App\Controller\OrderController::deleteOrder
+  methods:  DELETE

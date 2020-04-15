@@ -1,0 +1,2748 @@
+{
+	"info": {
+		"_postman_id": "32df2819-22af-4583-a5b6-df33daf22096",
+		"name": "PathChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://pathchallenge.test/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pathchallenge.test/register",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://pathchallenge.test/login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://pathchallenge.test/login-check",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"login-check"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY5NTMzNDQsImV4cCI6MTU4Njk1Njk0NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.OkfMeyZgVI4GYTFylUSE-Rtor8P4bWC3Jvqu7HlRRF4IzjxHpL8LeN_T1hy3WwjiOen8x8RFXY8Sn7gG0OFXXYuewSftn_U5wHMOUSmaNBcQL8gs7bhpZS2PdE5xZaEjkJ15E_tm5NAaplnOuFPHnv-49dPIsQ7scyep3LxjwQLTQWp4RN6BD2a2mTQE8eU9ZSYNe7Psj_2wCtcxqO0hvWDN5egiCpFg9xUeFIE92j5K8yCG5wwDsHQRElTNtdWhuPlLbH3CCvugR3YDgamKV1WK4AF0EBZ41y6cdjuikk2j0Aq-vF5BhRHcUP_m4KlFhnC2wnizXVrBj3GLXT9GN8sxdelV1NiKYmn26ZQOXUT6E8IKarmVQQr65XE2MUCgvttbCDAEh9OUgVxORGePgIdXaGufCOAuq4BODTq63irVi5nMfxgoKWbrb5p_05A3x_RdsSRAvbYI_bhkmbOpB_8JZS9-ZAwp-S1w_g4p4C-nmjM_lnRwYR59rjkObF3LgOTbwarpgx-cOsubOJKMagsxBXJG7fj1QFqG5skbzrlGwXs_DNjY8L_amZk_GupL5d_JqEgFC63ppTShAXftJ2j3TGiQd4DIByFLp28gSJy-ZI7ovucrMFf927FXWOvegqf2eoKEdct_iXQJJYkM-h9_WnMfUsFqORG2GULqcvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pathchallenge.test/orders",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				},
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:49:04 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Order was created successfully.\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Order List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY5NTMzNDQsImV4cCI6MTU4Njk1Njk0NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.OkfMeyZgVI4GYTFylUSE-Rtor8P4bWC3Jvqu7HlRRF4IzjxHpL8LeN_T1hy3WwjiOen8x8RFXY8Sn7gG0OFXXYuewSftn_U5wHMOUSmaNBcQL8gs7bhpZS2PdE5xZaEjkJ15E_tm5NAaplnOuFPHnv-49dPIsQ7scyep3LxjwQLTQWp4RN6BD2a2mTQE8eU9ZSYNe7Psj_2wCtcxqO0hvWDN5egiCpFg9xUeFIE92j5K8yCG5wwDsHQRElTNtdWhuPlLbH3CCvugR3YDgamKV1WK4AF0EBZ41y6cdjuikk2j0Aq-vF5BhRHcUP_m4KlFhnC2wnizXVrBj3GLXT9GN8sxdelV1NiKYmn26ZQOXUT6E8IKarmVQQr65XE2MUCgvttbCDAEh9OUgVxORGePgIdXaGufCOAuq4BODTq63irVi5nMfxgoKWbrb5p_05A3x_RdsSRAvbYI_bhkmbOpB_8JZS9-ZAwp-S1w_g4p4C-nmjM_lnRwYR59rjkObF3LgOTbwarpgx-cOsubOJKMagsxBXJG7fj1QFqG5skbzrlGwXs_DNjY8L_amZk_GupL5d_JqEgFC63ppTShAXftJ2j3TGiQd4DIByFLp28gSJy-ZI7ovucrMFf927FXWOvegqf2eoKEdct_iXQJJYkM-h9_WnMfUsFqORG2GULqcvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://pathchallenge.test/orders",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				},
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:49:04 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Order was created successfully.\"\n}"
+				},
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "Order List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:55:37 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderCode\": \"OR123\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:49:04.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"orderCode\": \"OR1234\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:55:31.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Order Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY5NTMzNDQsImV4cCI6MTU4Njk1Njk0NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.OkfMeyZgVI4GYTFylUSE-Rtor8P4bWC3Jvqu7HlRRF4IzjxHpL8LeN_T1hy3WwjiOen8x8RFXY8Sn7gG0OFXXYuewSftn_U5wHMOUSmaNBcQL8gs7bhpZS2PdE5xZaEjkJ15E_tm5NAaplnOuFPHnv-49dPIsQ7scyep3LxjwQLTQWp4RN6BD2a2mTQE8eU9ZSYNe7Psj_2wCtcxqO0hvWDN5egiCpFg9xUeFIE92j5K8yCG5wwDsHQRElTNtdWhuPlLbH3CCvugR3YDgamKV1WK4AF0EBZ41y6cdjuikk2j0Aq-vF5BhRHcUP_m4KlFhnC2wnizXVrBj3GLXT9GN8sxdelV1NiKYmn26ZQOXUT6E8IKarmVQQr65XE2MUCgvttbCDAEh9OUgVxORGePgIdXaGufCOAuq4BODTq63irVi5nMfxgoKWbrb5p_05A3x_RdsSRAvbYI_bhkmbOpB_8JZS9-ZAwp-S1w_g4p4C-nmjM_lnRwYR59rjkObF3LgOTbwarpgx-cOsubOJKMagsxBXJG7fj1QFqG5skbzrlGwXs_DNjY8L_amZk_GupL5d_JqEgFC63ppTShAXftJ2j3TGiQd4DIByFLp28gSJy-ZI7ovucrMFf927FXWOvegqf2eoKEdct_iXQJJYkM-h9_WnMfUsFqORG2GULqcvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://pathchallenge.test/orders/OR123",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"orders",
+						"OR123"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Order List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:55:37 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderCode\": \"OR123\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:49:04.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"orderCode\": \"OR1234\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:55:31.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				},
+				{
+					"name": "Order Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR123",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR123"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:59:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderCode\": \"OR123\",\n    \"productId\": 12345,\n    \"quantity\": 3,\n    \"address\": \"address info\",\n    \"shippingDate\": null,\n    \"createdAt\": {\n        \"date\": \"2020-04-15 12:49:04.000000\",\n        \"timezone_type\": 3,\n        \"timezone\": \"UTC\"\n    }\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				},
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:49:04 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Order was created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Order Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY5NTMzNDQsImV4cCI6MTU4Njk1Njk0NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.OkfMeyZgVI4GYTFylUSE-Rtor8P4bWC3Jvqu7HlRRF4IzjxHpL8LeN_T1hy3WwjiOen8x8RFXY8Sn7gG0OFXXYuewSftn_U5wHMOUSmaNBcQL8gs7bhpZS2PdE5xZaEjkJ15E_tm5NAaplnOuFPHnv-49dPIsQ7scyep3LxjwQLTQWp4RN6BD2a2mTQE8eU9ZSYNe7Psj_2wCtcxqO0hvWDN5egiCpFg9xUeFIE92j5K8yCG5wwDsHQRElTNtdWhuPlLbH3CCvugR3YDgamKV1WK4AF0EBZ41y6cdjuikk2j0Aq-vF5BhRHcUP_m4KlFhnC2wnizXVrBj3GLXT9GN8sxdelV1NiKYmn26ZQOXUT6E8IKarmVQQr65XE2MUCgvttbCDAEh9OUgVxORGePgIdXaGufCOAuq4BODTq63irVi5nMfxgoKWbrb5p_05A3x_RdsSRAvbYI_bhkmbOpB_8JZS9-ZAwp-S1w_g4p4C-nmjM_lnRwYR59rjkObF3LgOTbwarpgx-cOsubOJKMagsxBXJG7fj1QFqG5skbzrlGwXs_DNjY8L_amZk_GupL5d_JqEgFC63ppTShAXftJ2j3TGiQd4DIByFLp28gSJy-ZI7ovucrMFf927FXWOvegqf2eoKEdct_iXQJJYkM-h9_WnMfUsFqORG2GULqcvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"shippingDate\":\"2020-05-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pathchallenge.test/orders/OR123",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"orders",
+						"OR123"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Order List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:55:37 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderCode\": \"OR123\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:49:04.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"orderCode\": \"OR1234\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:55:31.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				},
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "Order Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shippingDate\":\"2020-05-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR123",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR123"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 13:08:53 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"errors\": \"Order updated successfully.\"\n}"
+				},
+				{
+					"name": "Order Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR123",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR123"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:59:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderCode\": \"OR123\",\n    \"productId\": 12345,\n    \"quantity\": 3,\n    \"address\": \"address info\",\n    \"shippingDate\": null,\n    \"createdAt\": {\n        \"date\": \"2020-04-15 12:49:04.000000\",\n        \"timezone_type\": 3,\n        \"timezone\": \"UTC\"\n    }\n}"
+				},
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:49:04 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Order was created successfully.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Order Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY5NTMzNDQsImV4cCI6MTU4Njk1Njk0NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.OkfMeyZgVI4GYTFylUSE-Rtor8P4bWC3Jvqu7HlRRF4IzjxHpL8LeN_T1hy3WwjiOen8x8RFXY8Sn7gG0OFXXYuewSftn_U5wHMOUSmaNBcQL8gs7bhpZS2PdE5xZaEjkJ15E_tm5NAaplnOuFPHnv-49dPIsQ7scyep3LxjwQLTQWp4RN6BD2a2mTQE8eU9ZSYNe7Psj_2wCtcxqO0hvWDN5egiCpFg9xUeFIE92j5K8yCG5wwDsHQRElTNtdWhuPlLbH3CCvugR3YDgamKV1WK4AF0EBZ41y6cdjuikk2j0Aq-vF5BhRHcUP_m4KlFhnC2wnizXVrBj3GLXT9GN8sxdelV1NiKYmn26ZQOXUT6E8IKarmVQQr65XE2MUCgvttbCDAEh9OUgVxORGePgIdXaGufCOAuq4BODTq63irVi5nMfxgoKWbrb5p_05A3x_RdsSRAvbYI_bhkmbOpB_8JZS9-ZAwp-S1w_g4p4C-nmjM_lnRwYR59rjkObF3LgOTbwarpgx-cOsubOJKMagsxBXJG7fj1QFqG5skbzrlGwXs_DNjY8L_amZk_GupL5d_JqEgFC63ppTShAXftJ2j3TGiQd4DIByFLp28gSJy-ZI7ovucrMFf927FXWOvegqf2eoKEdct_iXQJJYkM-h9_WnMfUsFqORG2GULqcvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"shippingDate\":\"2020-05-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pathchallenge.test/orders/OR1234",
+					"protocol": "http",
+					"host": [
+						"pathchallenge",
+						"test"
+					],
+					"path": [
+						"orders",
+						"OR1234"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Order Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR123",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR123"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:59:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderCode\": \"OR123\",\n    \"productId\": 12345,\n    \"quantity\": 3,\n    \"address\": \"address info\",\n    \"shippingDate\": null,\n    \"createdAt\": {\n        \"date\": \"2020-04-15 12:49:04.000000\",\n        \"timezone_type\": 3,\n        \"timezone\": \"UTC\"\n    }\n}"
+				},
+				{
+					"name": "Order Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shippingDate\":\"2020-05-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR1234",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR1234"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 13:10:00 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"errors\": \"Order deleted successfully\"\n}"
+				},
+				{
+					"name": "Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:14:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 422,\n    \"errors\": \"This user already registered.\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:18:45 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODY4ODQ3MjUsImV4cCI6MTU4Njg4ODMyNSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieXVzdWZrZW5hciJ9.UL-x9EGk5_Uk2B7JXt8PdZSBfQkcpPBD92l8gWbSu0ctXqQv5edT_sUsIStgMxA4cKXrpEEcoSzBNkpr0xEr30JjjhM1ZDAC7iFa2mU9fGSMofx5FIq2RMqDJWhndxoobewu1ufsj1OzpWmQiRbDM5PQjuW9DAkKbvVa1LsVH9dW-jaRmbmnBHh-3136eCo40HNI6eSxrBg736LBzMC3b8tBgSRjC9yDqE_HtMcPWO0cDc5iVh3yQDZKp0bdBUF0ObikVh-7wgK9wfPdNITmuv67KsD09GvoXmOojFW7LCIpM8AJ2UGi9MKhLXNkEhDKqQSYrWvoDO-wTvJCsdeKmYmdF0p0NwKRt0cUFw54wflvU8NQ0aslpVDpsVyq1dxjVJZ73Mb13uFx8ONdvJ_FSXmWKKbmfhHs2-G84rxisJ7F3Zzhod_1e7sYaMax6a4wPyzwtDPJ_Fjh1u-Mf_6JBh-WkmVP4E36QHNVpdsTTtEn1MuCLOgSMv6m40rKXZAWdCB2B9hPfn7qkMhO_KHQU26lNNUIVDaGe0P4Lcoqu8UX617Dgsd_oQiDbXFJOcS0hJpFg5HoXW9T2JbtlE0_NancMX8FnxcVxpxK59l9lfnojijJqp7QP-zcUW8LHWCeEmW1U4FrXgbOOalYG_A6T0oP3sCv3v6dHsn9Z-zwWIA\"\n}"
+				},
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"email\":\"kenaryusuf@gmail.com\",\n\t\"password\":\"221133\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/register",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:13:42 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Successfully registered.\"\n}"
+				},
+				{
+					"name": "Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"yusufkenar\",\n\t\"password\":\"2211233\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/login",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 14 Apr 2020 17:19:31 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials.\"\n}"
+				},
+				{
+					"name": "New Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"orderCode\":\"OR123\",\n\t\"productId\":\"12345\",\n\t\"quantity\":3,\n\t\"address\":\"address info\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:49:04 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"success\": \"Order was created successfully.\"\n}"
+				},
+				{
+					"name": "Order List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pathchallenge.test/orders",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 12:55:37 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderCode\": \"OR123\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:49:04.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"orderCode\": \"OR1234\",\n        \"productId\": 12345,\n        \"quantity\": 3,\n        \"address\": \"address info\",\n        \"shippingDate\": null,\n        \"createdAt\": {\n            \"date\": \"2020-04-15 12:55:31.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				},
+				{
+					"name": "Order Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shippingDate\":\"2020-05-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pathchallenge.test/orders/OR123",
+							"protocol": "http",
+							"host": [
+								"pathchallenge",
+								"test"
+							],
+							"path": [
+								"orders",
+								"OR123"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.15.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 13:08:53 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"errors\": \"Order updated successfully.\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
