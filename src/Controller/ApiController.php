@@ -89,6 +89,10 @@ class ApiController extends AbstractController
         return new JsonResponse($data, $this->getStatusCode());
     }
 
+    /**
+     * @param  string  $message
+     * @return JsonResponse
+     */
     public function responseUnauthorized($message = 'Unauthorized.')
     {
         $this->setStatusCode(401);
@@ -96,6 +100,10 @@ class ApiController extends AbstractController
         return $this->responseWithError($message);
     }
 
+    /**
+     * @param  Request  $request
+     * @return Request
+     */
     protected function transformJsonBody(Request $request)
     {
         $data = json_decode($request->getContent(), true);
